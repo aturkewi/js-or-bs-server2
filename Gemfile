@@ -4,6 +4,8 @@ gem 'nokogiri'
 gem 'annotate'
 gem 'pry'
 gem 'require_all'
+gem 'serializer'
+gem "active_model_serializers", github: "rails-api/active_model_serializers"
 
 gem 'rails', '4.2.5'
 

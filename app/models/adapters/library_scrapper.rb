@@ -6,7 +6,7 @@ module Adapters
       doc.css('div > h3 > a').map(&:text)
     end
 
-    def collect_pages
+    def collect_libraries
       (1..50).each_with_object([]) do |i, array|
         array.push(get_names_by_page(i))
       end.flatten

@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Library.destroy_all
+
+scraper = Adapters::LibraryScraper.new
+libraries_array = scraper.collect_libraries
+libraries_array.each do |library|
+  Library.create(name: library)
+end
