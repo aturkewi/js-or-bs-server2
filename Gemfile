@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'nokogiri'
+gem 'annotate'
+gem 'pry'
+gem 'require_all'
 
 gem 'rails', '4.2.5'
 
