@@ -1,3 +1,3 @@
 class FakeLibrarySerializer < ActiveModel::Serializer
-  attributes :name, :id
+  attributes :name
 end
