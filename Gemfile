@@ -9,6 +9,7 @@ gem "active_model_serializers", github: "rails-api/active_model_serializers"
 gem 'faker'
 gem 'ffaker'
 gem 'pg'
+gem 'rack-cors', require: 'rack/cors'
 
 gem 'rails', '4.2.5'
 
