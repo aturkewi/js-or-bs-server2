@@ -6,13 +6,13 @@ class FakeLibrariesController < ApplicationController
   def index
     @fake_libraries = FakeLibrary.all
 
-    render json: @fake_libraries
+    render json: ({fake_libraries: @fake_libraries})
   end
 
   # GET /fake_libraries/1
   # GET /fake_libraries/1.json
   def show
-    render json: @fake_library
+    render json: ({fake_library: @fake_library})
   end
 
   private
