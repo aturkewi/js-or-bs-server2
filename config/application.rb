@@ -9,11 +9,7 @@ Bundler.require(*Rails.groups)
 module JsOrBsServer2
   class Application < Rails::Application
 
-    # config.action_dispatch.default_headers = {
-    #   'Access-Control-Allow-Origin' => '*',
-    #   'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
-    # }
-
+    # conf
     config.middleware.insert_before 0, "Rack::Cors" do
           allow do
             origins '*'
