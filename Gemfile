@@ -8,6 +8,7 @@ gem 'serializer'
 gem "active_model_serializers", github: "rails-api/active_model_serializers"
 gem 'faker'
 gem 'ffaker'
+gem 'pg'
 
 gem 'rails', '4.2.5'
 
@@ -16,7 +17,7 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
-gem 'sqlite3'
+# gem 'sqlite3'
 
 
 
