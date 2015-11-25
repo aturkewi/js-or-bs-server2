@@ -22,6 +22,6 @@ class FakeLibrariesController < ApplicationController
     end
 
     def fake_library_params
-      params[:fake_library]
+      params.require(:fake_library).permit(:name)
     end
 end

@@ -13,7 +13,7 @@ class FakeLibrariesControllerTest < ActionController::TestCase
 
   test "should create fake_library" do
     assert_difference('FakeLibrary.count') do
-      post :create, fake_library: {  }
+      post :create, fake_library: { name: @fake_library.name }
     end
 
     assert_response 201
@@ -25,7 +25,7 @@ class FakeLibrariesControllerTest < ActionController::TestCase
   end
 
   test "should update fake_library" do
-    put :update, id: @fake_library, fake_library: {  }
+    put :update, id: @fake_library, fake_library: { name: @fake_library.name }
     assert_response 204
   end
 

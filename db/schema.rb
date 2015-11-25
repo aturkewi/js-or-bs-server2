@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124193650) do
+ActiveRecord::Schema.define(version: 20151125003833) do
+
+  create_table "fake_libraries", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "libraries", force: :cascade do |t|
     t.string   "name"
