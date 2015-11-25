@@ -4,13 +4,13 @@ class LibrariesController < ApplicationController
   # GET /libraries
   # GET /libraries.json
   def index
-    render json: Library.all
+    render json: ({library: Library.all})
   end
 
   # GET /libraries/1
   # GET /libraries/1.json
   def show
-    render json: ({library: @library})
+    render json: @library
   end
 
   private
