@@ -12,7 +12,7 @@ class LibrariesController < ApplicationController
   # GET /libraries/1
   # GET /libraries/1.json
   def show
-    render json: @library, root: true
+    render json: @library
   end
 
   private

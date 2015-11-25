@@ -9,7 +9,6 @@ Bundler.require(*Rails.groups)
 module JsOrBsServer2
   class Application < Rails::Application
 
-    # Taken from stevens boozer api
     config.action_dispatch.default_headers = {
       'Access-Control-Allow-Origin' => '*',
       'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
