@@ -6,7 +6,7 @@ class FakeLibrary < ActiveRecord::Base
   end
 
   def extra_js
-    rand() > .75 ? ".js" : ""
+    rand > .75 ? ".js" : ""
   end
 
 end
